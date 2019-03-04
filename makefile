@@ -1,10 +1,10 @@
 CC = gcc
 CFLAGS = -Wall -std=c11
 
-all: main.elf
+all: simplifymain.elf
 
-main.elf: main.c
-	$(CC) $(CFLAGS) main.c -o main.elf
+simplifymain.elf: simplifymain.c
+	$(CC) $(CFLAGS) simplifymain.c -o simplifymain.elf
 
 clean:
 	rm -f *.o *.elf
